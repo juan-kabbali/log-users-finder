@@ -88,6 +88,7 @@ foreach (glob($logs_dir . $logs_format) as $file) {
             if(!in_array($tmp_user, $read_lines)){
                 array_push($read_lines, $tmp_user);
                 $founded_users = $founded_users . $tmp_user . "\n";
+                echo $tmp_user;
             }
         }
 
